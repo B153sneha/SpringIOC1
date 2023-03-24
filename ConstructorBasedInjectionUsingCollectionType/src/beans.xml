@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+          <bean id="s" class="com.model.Student">
+		   <property name="cities">
+			   
+			   <list> <value>pune</value>
+			   <value>mumbai</value></list>
+		   </property>
+		   
+		   <property name="mobiles">
+			   <set>
+				   <value>7020243891</value>
+				   <value>7741806228</value>
+			   </set>
+		   </property>
+		   
+		   <property name="countryCodes">
+			   <map>
+				   
+				   <entry key="INDIA" value="91"></entry>
+					   <entry key="US" value="01"></entry>
+				  
+				   
+						   </map>
+					   </property>
+		   
+		</bean>
+</beans>

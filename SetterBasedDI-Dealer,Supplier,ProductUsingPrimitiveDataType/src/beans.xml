@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<bean xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"></bean>
+        
+        <bean id="d" class="com.model.Dealer">
+			
+			<property name="DealerId" value="1"></property>
+			<property name="DelaerName" value="Sneha"></property>
+			<property name="DealerMobile" value="7845258963"></property>
+			
+        </bean>
+			
+			<bean id="s" class="com.model.Supplier">
+			
+			<property name="SupId" value="1"></property>
+			<property name="SupName" value="Divya"></property>
+			<property name="SupMob" value="7741806228"></property>
+			
+			<property name="cities">
+			   
+			   <list> 
+				   <value>pune</value>
+			       <value>mumbai</value>
+			       
+			   </list>
+			</property>
+			</bean>
+			   	
+			   	<bean id="p" class="com.model.Product">
+			
+			<property name="ProductId" value="101"></property>
+			<property name="ProductName" value="TV"></property>
+			<property name="ProductPrice" value="77785"></property>
+			<property name="DealerId">
+			   <list> 
+				   <value>1001</value>
+			       <value>1002</value>
+			       
+			   </list>
+			</property>
+			   
+			   <property name="Ms">
+			   <map>
+				   
+				   <entry key="Supplier" value="10"></entry>
+					  
+				       </map>
+					   </property>
+			   	</bean>>
+</bean>
