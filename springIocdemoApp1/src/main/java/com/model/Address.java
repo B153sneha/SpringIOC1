@@ -4,7 +4,6 @@ public class Address {
 	
 	private String areaname;
 	private String cityname;
-	
 	public String getAreaname() {
 		return areaname;
 	}
@@ -17,4 +16,8 @@ public class Address {
 	public void setCityname(String cityname) {
 		this.cityname = cityname;
 	}
+	
+	
+	
+
 }

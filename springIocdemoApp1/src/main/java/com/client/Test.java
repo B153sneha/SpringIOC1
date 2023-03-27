@@ -10,15 +10,10 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ApplicationContext ac=new ClassPathXmlApplicationContext("beans.xml");
+		ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
 		
 		Student s=ac.getBean("s", Student.class);
 		
-		System.out.println(s.getRollno());
-		System.out.println(s.getName());
-		System.out.println(s.getaddr().getAreaname());
-		System.out.println(s.getaddr().getCityname());
-		
-		
+		s.display();
 	}
 }

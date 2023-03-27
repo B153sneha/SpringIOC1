@@ -2,9 +2,14 @@ package com.model;
 
 public class Student {
 	
+	public Student()
+	
+	{
+		System.out.println("Constustor call");
+	}
+	
 	private int rollno;
 	private String name;
-	private Address addr;
 	public int getRollno() {
 		return rollno;
 	}
@@ -17,10 +22,6 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Address getAddr() {
-		return addr;
-	}
-	public void setAddr(Address addr) {
-		this.addr = addr;
-	}
-	}
+	
+
+}
